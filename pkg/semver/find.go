@@ -17,7 +17,7 @@ func Find(prefix string, suffix string, versions []string) (found string, err er
 	var validVersion = regexp.MustCompile(`^\d+\.\d+\.\d+$`) //to allow simple version like 0.23.234
 	var filteredVersions []string
 	for _, version := range versions {
-		if validVersion.MatchString(version) || strings.Contains(version, prefix) && strings.Contains(version, suffix) {
+		if prefix == "v" && validVersion.MatchString(version) || strings.Contains(version, prefix) && strings.Contains(version, suffix) {
 			filteredVersions = append(filteredVersions, version)
 		}
 	}
