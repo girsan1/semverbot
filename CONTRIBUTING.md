@@ -33,3 +33,13 @@
     ```sh
     make test
     ```
+
+5.  To run semverbot locally, run:
+
+    ```sh
+    make build
+    ```
+    
+    ```sh
+    ./bin/sbot get version
+    ```

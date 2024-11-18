@@ -2,9 +2,10 @@ package semver
 
 import (
 	"fmt"
-	blangsemver "github.com/blang/semver/v4"
 	"regexp"
 	"strings"
+
+	blangsemver "github.com/blang/semver/v4"
 )
 
 // Find finds the biggest valid semver version in a slice of strings.
