@@ -200,12 +200,16 @@ Without this config `sbot` might show unexpected behaviour.
 Different platforms and environments work with different (or without) version prefixes. This option enables you to set whatever prefix you would like to work with.
 The `"v"` prefix, e.g. `v1.0.1` is used by default due to its popularity, e.g. some Golang tools completely depend on it.
 
+If a prefix is configured, then sbot predictions are only based on the latest semver tag including the prefix.
+
 Note: `sbot` will always display the version without the prefix.
 
 ### git.tags.suffix
 
 In case you need a version suffix, this option enables you to set whatever you would like to work with.
 By default, no suffix is used.
+
+If a suffix is configured, then sbot predictions are only based on the latest semver tag including the suffix.
 
 Note: `sbot` will always display the version without the suffix.
 
